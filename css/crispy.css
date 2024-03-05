@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header start */
+#header_card{
+    max-width: 100%;
+    min-height: 50px;
+    background-color: rgb(62, 59, 59);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 100px;
+}
+.contact_info i{
+    padding-left: 10px;
+
+}
+.contact_info p{
+    display: inline;
+}
+#header_card i:hover, #header_card p:hover{
+    color: orangered;
+} 
+/* header end */
+/* nav start */
+#navbar{
+    max-width: 100%;
+    min-height: 10vh;
+    background-color:orangered;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: +1;
+}
+.nav_logo{
+    font-size: 50px;
+    font-weight: 900px;
+    text-transform: capitalize;
+    font-family:italic; 
+    
+}
+.nav_logo p{
+    display: inline;
+}
+.nav_logo p span{
+    font-size: 70px;
+    font-weight: 900;
+}
+.nav_menu ul li {
+  display: inline-block; 
+}
+.nav_menu ul li a:hover{
+    background-color: white;
+    color: orangered;
+    border-radius: 10px;
+
+}
+.nav_menu ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+   
+}
+.services_list a{
+    display: block;
+    color: rgb(9, 10, 10);  
+}
+.services_list{
+    position: absolute;
+    background-color: rgb(246, 104, 15);
+    padding: 10px;
+    top:125px;
+    border: 2px rgb(247, 209, 138) solid;
+    box-shadow:10px 10px 10px orange ;
+    display: none;
+}
+.services_list a{
+    display: block;
+    color:rgb(12, 11, 10);
+    line-height: 30px;
+}
+.dropdown:hover .services_list{
+    display: block;
+}
+
+/* nav end */
+/* banner start */
+#banner{
+   max-width: 100%;
+   min-height: 60vh;
+   background-color: rgb(248, 239, 226);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 80px 50px;
+}
+.banner_content{
+    max-width:35%;
+    min-height: 50vh;
+    padding: 50px;
+}
+.banner_content h4 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family:italic; 
+    line-height: 50px;
+}
+.letter_style{
+    font-size: 80px;
+    color: orangered;
+}
+.recipe_word{
+    font-weight: 500px;
+    color:black;
+}
+.banner_content p{
+    line-height: 30px;
+    padding:25px 0px;
+    text-align: justify;
+}
+.b1{
+    background-color: rgb(29, 28, 28);
+    
+}
+.b2{
+    background-color: orangered;
+   
+}
+.b1,.b2{
+    color: rgb(255, 246, 246);
+    text-transform: capitalize;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+}
+.b1:hover,.b2:hover{
+    box-shadow: 10px 10px 10px orangered;
+    padding: 10px 50px;
+}
+.banner_img{
+    max-width:50%;
+    min-height: 50vh;
+   
+}
+.banner_img img{
+    width: 500px;
+    height: 500px; /* Makes the image fill the circle */
+    border-radius: 50%;
+}
+
+
+/* banner end */
+/* about_us start */
+.heading{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0px;
+}
+.heading::after{
+    content:"";
+    border-bottom:1px solid rgb(7, 7, 7);
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: rgb(10, 10, 10);
+    border-radius: 5px;
+    margin:10px auto;
+}
+#about_us{
+    max-width: 100%;
+    min-height: 40vh;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#about_us .about_content{
+    max-width: 60%;
+    min-height: 50vh;
+    text-align: justify;
+    padding: 50px 100px 50px 100px;    
+}
+.aboutus_heading{
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom:30px;
+    color: rgb(10, 10, 10);
+}
+.types{
+    margin-top: 30px;
+    max-width: 100%;
+    min-height: 15vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.types .card{
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   background-color: orangered;
+   display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.types .card:hover{
+    box-shadow: 0px 0px 30px orangered;
+}
+.card i{
+    font-size: 40px;
+    color: white;
+}
+.types .type1 h6{
+    padding:10px 0px 0px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.about_image{
+    max-width: 20%;
+    min-height: 25vh;
+}
+.about_image img{
+    height: 100%;
+    width: 100%;
+}
+/* testmonials start */
+#testimonials{
+    max-width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.testimonials_card{
+    max-width: 25%;
+    min-height: 40vh;
+} 
+.card_content{
+    max-width: 100%;
+    min-height: 80%;
+    background-color: orangered;
+    color: white;
+    padding: 30px;
+}
+.testimonials_card .client_name h6{
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+}
+.testimonials_card .client_name p{
+    color: gray;
+}
+.clients{
+ display: flex; 
+ flex-direction: row;
+ margin:10px 40px; 
+}
+.clients .client_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden; 
+    margin-right: 25px;
+
+}
+.clients .client_img img{
+    max-width: 100%;
+    min-height: 100%;
+}
+/* testmonials end */
+/* latest news start */
+#latestnews{
+    max-width: 100%;
+    min-height: 80vh;
+    position: relative;
+    margin-bottom: 50px;
+}
+.news_card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+}
+.img_card,.img_card2{
+    height: 400px;
+    width: 500px;
+}
+.news_card .img_card img,.news_card .img_card2 img{
+    height: 100%;
+    width: 100%;
+    box-shadow: 10px 10px 10px orange;
+    border-radius: 10px;
+} 
+.img_card{
+    position: relative;
+}
+.img_card .blog p{
+   position:absolute; 
+   top: 10px;
+   right: 10px;
+   color: orangered;
+   border: 1px white solid;
+   background-color:white;
+   padding: 5px;
+}
+.content_card{
+max-width: 50%;
+height: 40vh;
+}
+.content_card .date{
+    color:gray;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.content_card .card_head{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+.content_card .content{
+    color: rgb(139, 134, 132);
+    font-size:20px;
+    padding-bottom: 10px;
+}
+.content_card button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.img_card2 {
+    position: relative;
+}
+.img_card2 .blog2{
+    position: absolute;
+    color: aliceblue;
+    top:10px;
+    left:10px;
+    border: white;
+    background-color: white;
+    color:orangered;
+    padding: 5px;
+}
+/* latest news end */
+/* last */
+#ending_content{
+    max-width: 100%;
+    min-height: 30vh;
+    background-color: orangered;
+    text-align: center;
+    padding: 100px;
+    text-shadow: 0px 0px 10px white;
+}
+#ending_content h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#ending_content p{
+    text-transform:capitalize;
+    font-size: 30px;
+    padding-bottom: 30px; 
+}
+#ending_content h5{
+    font-size: 50px;
+
+}
+/* 0 */
+
+/* footer start */
+#footer{
+    max-width: 100%;
+    min-height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+#footer .footer_heading{
+    color: white;
+    font-size: 35px;
+    text-transform: capitalize;
+    word-spacing: 5px;
+    padding: 20px 20px;
+    color: orangered;
+}
+#footer .footer_card .footer_content{
+    color: rgb(255, 252, 252);
+    text-align: justify;
+    padding: 20px 20px;
+    text-transform: capitalize;
+}
+#footer .footer_card{
+    max-width: 30%;
+    min-height:40vh;
+    padding-top: 10px;
+}
+#footer .crispy h6{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 5px;
+    padding:20px 20px; ;
+}
+#footer .crispy h6 .span_h6{
+   font-size: 30px;
+   color: orangered; 
+}
+.subscribe input{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px white solid;
+    box-shadow:0px 0px 10px white;
+    color: orangered;
+}
+.subscribe input:focus{
+    box-shadow:10px 10px 10px orange;
+}
+.subscribe button{
+    padding: 10px;
+    margin-left: -4px;
+    border-radius:0px 10px 10px 0px ;
+    border: 2px orangered solid;
+    background: orangered;
+    box-shadow:0px 0px 10px white;
+}
+.subscribe button:focus{
+box-shadow:10px 10px 10px orange;
+}
+.copywrite{
+    color: white;
+    background-color:rgb(92, 89, 87);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/* footer end */
+
